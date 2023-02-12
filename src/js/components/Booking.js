@@ -25,10 +25,10 @@ class Booking {
     const thisBooking = this;
 
     thisBooking.peopleAmount = new AmountWidget(thisBooking.dom.peopleAmount);
-    thisBooking.dom.peopleAmount.addEventListener('updated', function () {});
+    thisBooking.dom.peopleAmount.addEventListener('updated', function(){});
 
     thisBooking.hoursAmount = new AmountWidget(thisBooking.dom.hoursAmount);
-    thisBooking.dom.peopleAmount.addEventListener('updated', function () {});
+    thisBooking.dom.peopleAmount.addEventListener('updated', function(){});
 
   }
 }
