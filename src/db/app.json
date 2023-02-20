@@ -206,7 +206,7 @@
     "events": [
       {
         "id": 1,
-        "date": "2023-02-17",
+        "date": "2023-02-20",
         "hour": "12:30",
         "table": 1,
         "repeat": false,
@@ -258,7 +258,7 @@
     "bookings":[
       {
         "id": 1,
-        "date":"2023-02-16",
+        "date":"2023-02-22",
         "hour": "12:00",
         "table": 1,
         "duration": 2,
