@@ -1,0 +1,131 @@
+.home-wrapper {
+  box-sizing: border-box;
+  margin: ($base-size * 3.5) auto;
+  padding: ($base-size * 6) ($base-size * 4);
+  background: $color-light;
+  border-bottom: 1px solid lighten($color-dark, 70%);
+  border-radius: $radius;
+}
+
+.home-header {
+  margin-bottom: 60px;
+}
+
+h3 {
+  font-family: $font-header;
+  font-weight: $font-semibold;
+  font-size: 25px;
+}
+
+h4 {
+  text-transform: uppercase;
+}
+
+.row-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.box {
+  width: 300px;
+  height: 120px;
+  border-radius: $radius;
+  position: relative;
+
+  a {
+    text-decoration: none;
+    color: $color-light;
+  }
+
+  img {
+    width: 300px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: $radius;
+  }
+
+  h3 {
+    margin: 20px 0 0 0;
+  }
+
+  &:hover h3 {
+    transform: translateY(-25%);
+    transition: $transition;
+    margin: 0 0 10px 0;
+  }
+
+  p {
+    opacity: 0;
+    margin-bottom: 20px;
+  }
+
+  &:hover p {
+    transform: translateY(-25%);
+    transition: $transition;
+    opacity: 100%;
+    margin: 0;
+  }
+}
+
+.text-description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: $color-light;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  transition: 0.6s;
+}
+
+.bottom-box {
+  width: 606px;
+  height: 120px;
+  border-radius: $radius;
+  background-color: $color-main;
+  color: $color-light;
+  text-align: center;
+  flex: 100%;
+  margin: 6px 0;
+  padding: 24px 0;
+
+  h3 {
+    margin: auto;
+  }
+
+  .open-time {
+    margin: 0;
+    font-weight: $font-semibold;
+  }
+}
+
+.carousel-cell {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 5px;
+
+  img {
+    width: 35%;
+    height: 170px;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+
+  p {
+    width: 65%;
+    align-self: baseline;
+    padding: 0 0 0 50px;
+    line-height: 25px;
+
+    span {
+      font-size: larger;
+    }
+  }
+}
